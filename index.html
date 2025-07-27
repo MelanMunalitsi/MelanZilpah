@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melan Zilpah Munalitsi | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    :root {
+      --bg-light: #f8f9fa;
+      --text-light: #333;
+      --bg-dark: #121212;
+      --text-dark: #f1f1f1;
+      --accent: #0d6efd;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: all 0.3s ease;
+    }
+
+    body.dark-mode {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: #343a40;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .dark-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    h1, h2 {
+      margin: 0.5rem 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .skills {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .skill-badge {
+      background: var(--accent);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .pitch {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body.dark-mode .pitch {
+      background: #1e1e1e;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Melan Zilpah Munalitsi</h1>
+    <p>Math & Computer Science Student | Aspiring Software Developer | Cybersecurity Enthusiast</p>
+    <button class="dark-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <div class="container">
+    <div class="section pitch" data-aos="fade-up">
+      <h2>Elevator Pitch</h2>
+      <p>
+        Hi, I'm <strong>Melan Zilpah Munalitsi</strong>, a driven student of Mathematics and Computer Science at Kenyatta University. 
+        Over the past few weeks, I've honed my skills in backend development using Django and PHP, explored React for frontend UI, 
+        and strengthened my expertise in cybersecurity through hands-on practice with Kali Linux and Burp Suite.
+      </p>
+
+      <p>
+        My top three skills include <strong>Python development, penetration testing, and database design</strong>.
+      </p>
+
+      <p>
+        I stand out because I bring not just technical capability, but also a strong sense of responsibility, client-focused communication, 
+        and end-to-end project execution. My experiences in real-world team projects and freelance roles have refined my ability to deliver results under pressure.
+      </p>
+
+      <p>
+        By working with me, clients and employers can expect timely delivery, clean and secure code, and constant updates throughout the development cycle.
+      </p>
+
+      <p>
+        <em>I'd be thrilled to use my technical and communication skills to help you bring your next project to life—efficiently and securely.</em>
+      </p>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">Django</div>
+        <div class="skill-badge">React</div>
+        <div class="skill-badge">HTML/CSS</div>
+        <div class="skill-badge">PHP</div>
+        <div class="skill-badge">MySQL</div>
+        <div class="skill-badge">Cybersecurity</div>
+        <div class="skill-badge">Burp Suite</div>
+        <div class="skill-badge">Linux (Kali)</div>
+        <div class="skill-badge">Excel</div>
+      </div>
+    </div>
+
+    <div class="section" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:melanzilpah@gmail.com">melanzilpah@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="#">(Insert your LinkedIn URL)</a></p>
+      <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/MelanMunalitsi" target="_blank">MelanMunalitsi</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Melan Zilpah Munalitsi. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
